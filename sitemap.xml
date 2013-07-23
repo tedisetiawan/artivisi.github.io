@@ -13,10 +13,6 @@
         <lastmod>2013-07-23T10:46:33+07:00</lastmod>
     </url>
     <url>
-        <loc>http://artivisi.github.io/blog/archives/</loc>
-        <lastmod>2013-07-23T10:46:33+07:00</lastmod>
-    </url>
-    <url>
         <loc>http://artivisi.github.io/content/training/java_ee/</loc>
         <lastmod>2013-07-23T10:46:33+07:00</lastmod>
     </url>
@@ -46,6 +42,10 @@
     </url>
     <url>
         <loc>http://artivisi.github.io/content/about/</loc>
+        <lastmod>2013-07-23T10:46:33+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://artivisi.github.io/archives/</loc>
         <lastmod>2013-07-23T10:46:33+07:00</lastmod>
     </url>
 </urlset>

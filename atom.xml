@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[ArtiVisi Intermedia]]></title>
   <link href="http://artivisi.github.io/atom.xml" rel="self"/>
   <link href="http://artivisi.github.io/"/>
-  <updated>2013-07-23T13:40:46+07:00</updated>
+  <updated>2013-07-23T13:59:10+07:00</updated>
   <id>http://artivisi.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[ArtiVisi Intermedia]]></name>
+    <email><![CDATA[info@artivisi.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
