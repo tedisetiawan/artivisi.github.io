@@ -7,7 +7,6 @@ sharing: true
 footer: true
 ---
 
-ABOUT US
 Artivisi is an IT Company which specialize in software development, VOIP technologies, and network management areas. Artivisi provides training, services, and in-house product implementation for those areas.
 
 Our biggest asset are people and knowledge, we always doing research to find a better solution by leveraging new technology. We also contribute our expertise back to the community by sharing knowledge and sponsoring open source projects. Our mission “Deliver Value With Open Platform”
