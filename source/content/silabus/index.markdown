@@ -9,7 +9,7 @@ footer: true
 
 <div markdown class="pageSilabus">
 
- Abjad| Homeland
+ Abjad| Silabus
 ------|----------
 A|[Ajax (AJX)]({{ root_url }}/content/silabus/ajax)<br><br>[Ant]({{ root_url }}/content/silabus/ant)<br><br>[Automated Testing Java (PTJ)]({{ root_url }}/content/silabus/ptj)
 B|-
