@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ArtiVisi Bootchamp"
+title: "ArtiVisi Bootcamp"
 date: 2013-07-18 13:17
 comments: true
 sharing: true
