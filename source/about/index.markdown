@@ -7,19 +7,20 @@ sharing: true
 footer: true
 ---
 
-Artivisi is an IT Company which specialize in software development, VOIP technologies, and network management areas. Artivisi provides training, services, and in-house product implementation for those areas.
+Artivisi adalah Perusahaan IT yang mengkhususkan diri dalam pengembangan perangkat lunak, teknologi VOIP, dan area manajemen jaringan. Artivisi memberikan pelatihan, jasa, dan implementasi produk in-house bagi daerah-daerah.
 
-Our biggest asset are people and knowledge, we always doing research to find a better solution by leveraging new technology. We also contribute our expertise back to the community by sharing knowledge and sponsoring open source projects. Our mission “Deliver Value With Open Platform”
+Aset terbesar kami adalah orang-orang dan pengetahuan, kami selalu melakukan penelitian untuk menemukan solusi yang lebih baik dengan memanfaatkan teknologi baru. Kami juga menyumbangkan keahlian kami kembali ke masyarakat dengan berbagi pengetahuan dan mensponsori proyek open source. Misi kami "Memberikan Nilai Dengan Open Platform"
 
-Training:
+Pelatihan:
 
-* Building Java Desktop Application
-* Building Java Web Application
-* Building Java Mobile Application for Business Application
-* Building Java Mobile Application for Game Developer
-* Project Management for Software Development
+* Membangun Aplikasi Java Desktop
+* Membangun Aplikasi Java Web 
+* Membangun Aplikasi Java Mobile untuk Aplikasi Bisnis
+* Membangun Aplikasi Java Mobile untuk Game Developer
+* Manajemen Proyek untuk Pengembangan Perangkat Lunak
 
-Services:
+Pelayanan:
 
-* Software Development with Java and full stack open source framework technologies
-* Team building for software development, project management skill, integrate quality assurance, and streamline development processes.
+* Pengembangan Software dengan Java dan teknologi full stack open source framework
+* Team building untuk pengembangan perangkat lunak, keterampilan manajemen proyek, mengintegrasikan jaminan kualitas, dan merampingkan proses pembangunan.
+
