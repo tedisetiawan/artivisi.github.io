@@ -97,3 +97,15 @@
 .no-margin {
     margin: 0px !important;
 }
+.pageContent>ul>li,.pageContent>ol>li{
+	margin-left:1em
+}
+.pageContentBottom>ul>li,.pageContentBottom>ol>li{
+	margin-bottom:1em
+}
+.pageSilabus>table>tbody>tr>td,table>thead>tr>td{
+	border:1px solid #D8D8D8
+}
+.pageSilabus>table{
+	width:100%
+}
