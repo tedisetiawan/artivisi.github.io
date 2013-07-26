@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "WEBSERVICE(JWS)"
+title: "Web Service(JWS)"
 date: 2013-07-18 13:17
 comments: true
 sharing: true
