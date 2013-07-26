@@ -13,21 +13,21 @@ Salah satu pertanyaan yang sering saya terima belakangan ini adalah
 
 Daripada mengulang setiap kali, baiklah saya tulis saja di sini supaya cukup satu kali saja saya menjelaskan.
 
-### Filosofi Magang ###
+##### Filosofi Magang
 
 Filosofi magang di ArtiVisi adalah saling menguntungkan. Peserta magang mendapat keuntungan dari ArtiVisi berupa skill dan pengalaman. ArtiVisi mendapat keuntungan berupa tenaga kerja murah.
 
-### Siapa yang boleh magang ###
+##### Siapa yang boleh magang
 
 Siapa saja boleh. SD, SMP, SMA, SMK, Kuliah, pengangguran, sudah bekerja semua boleh. Latar belakang pendidikan tidak penting. Mau kuliah jurusan arkeologi tidak masalah.
 
 Demikian juga, umur juga tidak menjadi pertimbangan.
 
-### Periode Magang ###
+##### Periode Magang
 
 Magang bisa dilakukan kapan saja sepanjang tahun. Tidak ada batasan harus di tahun ajaran baru atau sejenisnya.
 
-### Durasi Magang ###
+##### Durasi Magang
 
 Magang minimal 3 bulan, maksimal tidak dibatasi. Kenapa 3 bulan?
 
@@ -43,17 +43,17 @@ Porsi di atas menunjukkan alokasi waktu yang digunakan. Misalnya Anda menghabisk
 
 > Baiklah saya tertarik magang. Bagaimana syarat dan ketentuannya?
 
-### Perlengkapan ###
+##### Perlengkapan
 
 Peserta magang membawa laptop sendiri. ArtiVisi hanya menyediakan tempat duduk, colokan listrik, dan koneksi internet.
 
-### Jam Operasional ###
+##### Jam Operasional
 
 Magang dilakukan di jam kantor normal. Senin - Jumat 08:00-16:30. Tidak terima magang di luar jam kerja kantor normal.
 
 Kenapa begitu? Kami harus menyediakan staf untuk mendampingi, membimbing, dan mereview hasil pekerjaan. Kalau Anda ingin magang, berarti staf pendamping ini juga harus lembur, sedangkan di ArtiVisi kita tidak suka lembur.
 
-### Kompensasi ###
+#####  Kompensasi
 
 Tidak ada kompensasi finansial apa-apa. Semua biaya transportasi, uang makan, biaya hidup, akomodasi (buat yang berasal dari luar kota) tidak diganti, harus dikeluarkan dari kocek sendiri.
 
@@ -61,7 +61,7 @@ Tidak ada kompensasi finansial apa-apa. Semua biaya transportasi, uang makan, bi
 
 Jika Anda merasa di tempat lain bisa lebih menguntungkan, silahkan magang di sana. Tidak ada yang memaksa Anda magang di ArtiVisi. Sejujurnya, mengurus magang lebih banyak repotnya daripada untungnya buat kami. Tapi kami juga sadar bahwa untuk menjadi kompeten, orang butuh pengalaman riil dunia kerja. Inilah bentuk CSR (Corporate Social Responsibility) kami terhadap mereka-mereka yang ingin maju dan berkembang tapi sulit mendapat kesempatan.
 
-### Prosedur Administrasi ###
+#####  Prosedur Administrasi
 
 > Baiklah saya sudah mengerti, bagaimana cara saya mendaftar magang?
 
