@@ -87,13 +87,14 @@ Implementasi &hellip;">
         <div class="small-5 large-3 columns">
           <!-- main header kanan tempat form search -->
           <div class="main-header-kanan rounded">
-            <form id="cari" action="#">
+            <form id="cari" action="http://google.com/search" method="get">
+			  <input type="hidden" name="q" value="site:artivisi.github.io" />
               <div class="row collapse">
                 <div class="small-3 large-2 columns">
                   <span class="prefix"><i class="icon-search"></i></span>
                 </div>
                 <div class="small-9 large-10 columns">
-                  <input type="text" placeholder="search here">
+                  <input class="search" type="text" name="q" results="0" placeholder="Search Here">
                 </div>
               </div>
             </form>
