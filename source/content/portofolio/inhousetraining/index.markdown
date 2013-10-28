@@ -16,10 +16,28 @@ footer: true
 	</thead>
 	<tbody>
 	<!-- -- 2013 -- -->
-		
+		<tr>
+			<td rowspan=4 class="td-tahun">2013</td>
+			<td>Training Java (Bank Perkreditan Rakyat Karyajatnika Sadaya)</td>
+		</tr>
+		<tr>
+			<td>Training Java Desktop (Mandala Finance)</td>
+		</tr>
+		<tr>
+			<td>Training Spring MVC (Mandala Finance)</td>
+		</tr>
+		<tr>
+			<td>Training Java Web (Intisoft Mitra Sejahtera)</td>
+		</tr>
 	<!-- -- 2012 -- -->
 		<tr>
-			<td rowspan=4 class="td-tahun">2012</td>
+			<td rowspan=6 class="td-tahun">2012</td>
+			<td>Training Teknologi Informasi (Trimedia Profitama)</td>
+		</tr>
+		<tr>
+			<td>Training Java (Cahaya Buana Intitama)</td>
+		</tr>
+		<tr>
 			<td>Training Java Web (Alita Praya Mitra)</td>
 		</tr>
 		<tr>
