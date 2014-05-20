@@ -7,6 +7,12 @@ sharing: true
 footer: true
 ---
 
+<style>
+    .content-hidden{
+        display: none;
+    }
+</style>
+
 <ul class="portfolio-filter nav nav-pills">
     <li class="active"><a href="#" data-filter="*">All</a></li>
 </ul>
@@ -16,15 +22,27 @@ footer: true
         <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper artwork creative">
             <div class="portfolio-item">
                 <div class="portfolio-thumb">
-                	<span class="img-responsive" alt="1st Portfolio Thumb" style="font-size:4em;text-align:center;border:1px solid silver">
+                	<span class="img-responsive" alt="1st Portfolio Thumb" style="font-size:4em;text-align:center;border:1px solid #ECF0F1">
 						<i class="fa fa-group"></i>
 					</span>
                     <div class="image-overlay"></div>
-                    <a href="" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
+                    <a href="" onclick="changeTextModal(1)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
                 </div>
                 <div class="portfolio-details">
                     <h5>PT. Indonesia Compnet Plus</h5>
                     <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                    <!-- ########## Hiden ########### -->
+                    <div class="content-hidden">
+                        <div id="list-project-description1">
+                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
+                        </div>
+                        <div id="list-project-project1">-</div>
+                        <div id="list-project-date1">-</div>
+                        <div id="list-project-company1">PT. Indonesia Compnet Plus</div>
+                        <div id="list-project-website1">-</div>
+                    </div>
+                    <!-- ############################ -->
+
                 </div>
         	</div>
         </div>
@@ -32,15 +50,26 @@ footer: true
         <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper nature outside">
             <div class="portfolio-item">
                 <div class="portfolio-thumb">
-                	<span class="img-responsive" alt="1st Portfolio Thumb" style="font-size:4em;text-align:center;border:1px solid silver">
+                	<span class="img-responsive" alt="1st Portfolio Thumb" style="font-size:4em;text-align:center;border:1px solid #ECF0F1">
 						<i class="fa fa-group"></i>
 					</span>
                 	<div class="image-overlay"></div>
-                    <a href="" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
+                    <a href="" onclick="changeTextModal(2)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
                 </div>
                 <div class="portfolio-details">
                     <h5>PT. Sigma Cipta Caraka</h5>
                     <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                    <!-- ########## Hiden ########### -->
+                    <div class="content-hidden">
+                        <div id="list-project-description2">
+                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
+                        </div>
+                        <div id="list-project-project2">-</div>
+                        <div id="list-project-date2">-</div>
+                        <div id="list-project-company2">PT. Sigma Cipta Caraka</div>
+                        <div id="list-project-website2">-</div>
+                    </div>
+                    <!-- ############################ -->
                 </div>
             </div>
         </div>
