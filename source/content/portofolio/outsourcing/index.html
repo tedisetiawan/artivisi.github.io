@@ -7,13 +7,47 @@ sharing: true
 footer: true
 ---
 
-<table class="table table-bordered">
-	<tbody>
-		<tr>
-			<td>PT. Indonesia Compnet Plus</td>
-		</tr>
-		<tr>
-			<td>PT. Sigma Cipta Caraka</td>
-		</tr>
-	</tbody>
-</table>
+<ul class="portfolio-filter nav nav-pills">
+    <li class="active"><a href="#" data-filter="*">All</a></li>
+</ul>
+<!-- /.portfolio-filter -->
+<div class="row">
+    <div id="isotope-portfolio-container">
+        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper artwork creative">
+            <div class="portfolio-item">
+                <div class="portfolio-thumb">
+                	<span class="img-responsive" alt="1st Portfolio Thumb" style="font-size:4em;text-align:center;border:1px solid silver">
+						<i class="fa fa-group"></i>
+					</span>
+                    <div class="image-overlay"></div>
+                    <a href="" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
+                </div>
+                <div class="portfolio-details">
+                    <h5>PT. Indonesia Compnet Plus</h5>
+                    <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                </div>
+        	</div>
+        </div>
+        <!-- /.portfolio-item-wrapper -->
+        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper nature outside">
+            <div class="portfolio-item">
+                <div class="portfolio-thumb">
+                	<span class="img-responsive" alt="1st Portfolio Thumb" style="font-size:4em;text-align:center;border:1px solid silver">
+						<i class="fa fa-group"></i>
+					</span>
+                	<div class="image-overlay"></div>
+                    <a href="" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
+                </div>
+                <div class="portfolio-details">
+                    <h5>PT. Sigma Cipta Caraka</h5>
+                    <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.isotope-portfolio-container -->
+</div>
+<!-- /.row -->
+
+
+{% include modal/modal_project.html %}

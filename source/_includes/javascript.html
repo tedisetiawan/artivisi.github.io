@@ -13,6 +13,9 @@
         <script src="{{ root_url }}/assets/UItoTop/js/jquery.ui.totop.min.js"></script>
         <script src="{{ root_url }}/assets/isotope-site/jquery.isotope.min.js"></script>
         <script src="{{ root_url }}/assets/FitVids.js/jquery.fitvids.js"></script>
+        
+
+        {% if page.title == null %}
         <script type="text/javascript">
             var tpj = jQuery;
             tpj.noConflict();
@@ -153,4 +156,40 @@
                 caroufredsel();
             });            
         </script>
-        
+        {% endif %}
+
+        {% if page.title == "Outsourcing" %}
+        <script type="text/javascript">
+            $(document).ready(function () {
+                // PrettyPhoto
+                $("a[rel^='prettyPhoto']").prettyPhoto({
+                    theme: 'light_square',
+                    social_tools: false
+                });
+            });
+            // Isotope Portfolio
+            var $container = $('#isotope-portfolio-container');
+            var $filter = $('.portfolio-filter');
+            $(window).load(function () {
+                // Initialize Isotope
+                $container.isotope({
+                    itemSelector: '.portfolio-item-wrapper'
+                });
+                $('.portfolio-filter a').click(function () {
+                    var selector = $(this).attr('data-filter');
+                    $container.isotope({ filter: selector });
+                    return false;
+                });
+                $filter.find('a').click(function () {
+                    var selector = $(this).attr('data-filter');
+                    $filter.find('a').parent().removeClass('active');
+                    $(this).parent().addClass('active');
+                });
+            });
+            $(window).smartresize(function () {
+                $container.isotope('reLayout');
+            });            
+        </script>
+        <!-- Custom Script For This Template -->
+        <script src="{{ root_url }}/assets/js/script.js"></script>
+        {% endif %}

@@ -6008,9 +6008,9 @@ body.modal-open,
 }
 
 .modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
+  -webkit-transform: translate(0, 9%);
+      -ms-transform: translate(0, 9%);
+          transform: translate(0, 9%);
 }
 
 .modal-dialog {
@@ -6022,6 +6022,8 @@ body.modal-open,
 }
 
 .modal-content {
+  max-height: 500px;
+  overflow: auto;
   position: relative;
   background-color: #ffffff;
   border: 1px solid #999999;
@@ -6147,7 +6149,7 @@ body.modal-open,
   .modal-dialog {
     right: auto;
     left: 50%;
-    width: 600px;
+    width: 800px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
