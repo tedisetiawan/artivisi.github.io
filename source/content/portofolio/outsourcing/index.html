@@ -8,6 +8,31 @@ filter_portofolio: true
 footer: true
 ---
 
+<script>
+// namaApp | Tahun | Description | project | date | company | website
+var LoreIpsum = "Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.";
+
+var array = [
+{
+    "nama": "PT. Indonesia Compnet Plus", // new property for this object
+    "tahun": "-",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "PT. Indonesia Compnet Plus",
+    "company": "-",
+    "image": "{{ root_url }}/images/icon_example.png"},
+
+{
+    "nama": "PT. Sigma Cipta Caraka", // new property for this object
+    "tahun": "-",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "PT. Sigma Cipta Caraka",
+    "company": "-",
+    "image": "{{ root_url }}/images/icon_example.png"},
+]; 
+</script>
+
 <style>
     .content-hidden{
         display: none;
@@ -20,58 +45,35 @@ footer: true
 <!-- /.portfolio-filter -->
 <div class="row">
     <div id="isotope-portfolio-container">
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper artwork creative">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                    <img src="{{ root_url }}/images/icon_example.png" class="img-responsive">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(1)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>PT. Indonesia Compnet Plus</h5>
-                    <p>Nullam id dolor id nibh ultricies vehicula.</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description1">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project1">-</div>
-                        <div id="list-project-date1">-</div>
-                        <div id="list-project-company1">PT. Indonesia Compnet Plus</div>
-                        <div id="list-project-website1">-</div>
-                    </div>
-                    <!-- ############################ -->
+        
+<script>
+ for (i=0; i<array.length; i++)
+    {   
+        document.write("<div class='col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper "+array[i].tahun+"'>");
+            document.write("<div class='portfolio-item'>");
+                document.write("<div class='portfolio-thumb'>");
+                    document.write("<img src='"+array[i].image+"' class='img-responsive'>"); 
+                    document.write("<div class='image-overlay'></div>"); 
+                    document.write("<a class='portfolio-zoom'><i class='fa fa-eye'></i></a>"); 
+                    document.write("<a href='#' onclick='changeTextModal("+i+")' class='portfolio-zoom' data-toggle='modal' data-target='#myModal'><i class='fa fa-eye'></i></a>"); 
+                document.write("</div>"); 
+                document.write("<div class='portfolio-details'>"); 
+                    document.write("<h5>"+array[i].nama+"</h5>"); 
+        document.write("<p>Tahun : "+array[i].tahun+"</p>"); 
 
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper nature outside">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="3nd Portfolio Thumb">
-                	<div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(2)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>PT. Sigma Cipta Caraka</h5>
-                    <p>Nullam id dolor id nibh ultricies vehicula.</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description2">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project2">-</div>
-                        <div id="list-project-date2">-</div>
-                        <div id="list-project-company2">PT. Sigma Cipta Caraka</div>
-                        <div id="list-project-website2">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-            </div>
-        </div>
+            document.write("<div class='content-hidden'>");
+                document.write("<div id='list-project-description"+i+"'>"+array[i].description+"</div>");
+                document.write("<div id='list-project-project"+i+"'>"+array[i].nama+"</div>");
+                document.write("<div id='list-project-date"+i+"'>"+array[i].date+"</div>");
+                document.write("<div id='list-project-company"+i+"'>"+array[i].company+"</div>");
+                document.write("<div id='list-project-website"+i+"'>"+array[i].website+"</div>");
+            document.write("</div>");
+
+        document.write("</div></div></div>"); 
+
+    }
+</script>
+
     </div>
     <!-- /.isotope-portfolio-container -->
 </div>
@@ -79,3 +81,4 @@ footer: true
 
 
 {% include modal/modal_project.html %}
+

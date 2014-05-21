@@ -4,130 +4,379 @@ title: "In House Training"
 date: 2013-10-24 13:17
 comments: true
 sharing: true
+filter_portofolio: true
 footer: true
 ---
 
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th class="th-tahun">Tahun</th>
-			<th class="th-uraian">Uraian</th>
-		</tr>
-	</thead>
-	<tbody>
-	<!-- -- 2013 -- -->
-		<tr>
-			<td rowspan=4 class="td-tahun">2013</td>
-			<td>Training Java (Bank Perkreditan Rakyat Karyajatnika Sadaya)</td>
-		</tr>
-		<tr>
-			<td>Training Java Desktop (Mandala Finance)</td>
-		</tr>
-		<tr>
-			<td>Training Spring MVC (Mandala Finance)</td>
-		</tr>
-		<tr>
-			<td>Training Java Web (Intisoft Mitra Sejahtera)</td>
-		</tr>
-	<!-- -- 2012 -- -->
-		<tr>
-			<td rowspan=6 class="td-tahun">2012</td>
-			<td>Training Teknologi Informasi (Trimedia Profitama)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Cahaya Buana Intitama)</td>
-		</tr>
-		<tr>
-			<td>Training Java Web (Alita Praya Mitra)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Bank Mega)</td>
-		</tr>
-		<tr>
-			<td>Training Web Service (Anabatic Technologies)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Anabatic Technologies)</td>
-		</tr>
-	<!-- -- 2011 -- -->
-		<tr>
-			<td rowspan=4 class="td-tahun">2011</td>
-			<td>Training Training Hibernate dan Spring (Sumber Sarana)</td>
-		</tr>
-		<tr>
-			<td>Training Java Web (Jasa Asuransi Indonesia)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Sigma Cipta Caraka)</td>
-		</tr>
-		<tr>
-			<td>Training MySQL (Graha Informatika Nusantara)</td>
-		</tr>
-	<!-- -- 2010 -- -->
-		<tr>
-			<td rowspan=5 class="td-tahun">2010</td>
-			<td>Training Java Web (Pura Barutama)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Visi Solusi Teknologi)</td>
-		</tr>
-		<tr>
-			<td>Training Java (ITC Finance)</td>
-		</tr>
-		<tr>
-			<td>Training JPos (AJN Solusindo)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Nusantara Compnet Integrator)</td>
-		</tr>
-	<!-- -- 2009 -- -->
-		<tr>
-			<td rowspan=4 class="td-tahun">2009</td>
-			<td>Training Java (ITC Finance)</td>
-		</tr>
-		<tr>
-			<td>Training Ibatis (Sarana Multi Solusi)</td>
-		</tr>
-		<tr>
-			<td>Training Java Fundamental & Java Web Basic (Derektorat Jendral Bea dan Cukai)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Bappenas)</td>
-		</tr>
-	<!-- -- 2008 -- -->
-		<tr>
-			<td rowspan=11 class="td-tahun">2008</td>
-			<td>Training Java (Inter Aneka Lestari Kimia)</td>
-		</tr>
-		<tr>
-			<td>Training Java Application Designing dan Programming (Agranet Multi Citra Siberkom)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Wahana Arthan Harsaka)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Perdanan Informatika)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Pertamina Bina Medika)</td>
-		</tr>
-		<tr>
-			<td>Training MySQL (Bajau Escorindo)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Lembaga Sandi Negara)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Wijaya Karya)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Andia)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Bappenas)</td>
-		</tr>
-		<tr>
-			<td>Training Java (Primenet)</td>
-		</tr>
-	</tbody>
-</table>
+<script>
+// namaApp | Tahun | Description | project | date | company | website
+var LoreIpsum = "Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.";
+
+var array = [
+{
+    "nama": "Bank Perkreditan Rakyat Karyajatnika Sadaya", // new property for this object
+    "training": "Training Java",
+    "tahun": "2013",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Bank Perkreditan Rakyat Karyajatnika Sadaya",
+	"image": "{{ root_url }}/images/icon_example.png"},
+
+{
+    "nama": "Mandala Finance", // new property for this object
+    "training": "Training Java Desktop",
+    "tahun": "2013",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Mandala Finance",
+	"image": "{{ root_url }}/images/icon_example.png"},
+
+{
+    "nama": "Mandala Finance", // new property for this object
+    "training": "Training Spring MVC",
+    "tahun": "2013",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Mandala Finance",
+	"image": "{{ root_url }}/images/icon_example.png"},
+
+{
+    "nama": "Intisoft Mitra Sejahtera", // new property for this object
+    "training": "Training Java Web",
+    "tahun": "2013",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Intisoft Mitra Sejahtera",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Trimedia Profitama", // new property for this object
+    "training": "Training Teknologi Informasi",
+    "tahun": "2012",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Trimedia Profitama",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Cahaya Buana Intitama", // new property for this object
+    "training": "Training Java",
+    "tahun": "2012",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Cahaya Buana Intitama",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Alita Praya Mitra", // new property for this object
+    "training": "Training Java Web",
+    "tahun": "2012",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Alita Praya Mitra",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Bank Mega", // new property for this object
+    "training": "Training Java",
+    "tahun": "2012",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Bank Mega",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Anabatic Technologies", // new property for this object
+    "training": "Training Web Service",
+    "tahun": "2012",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Anabatic Technologies",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Anabatic Technologies", // new property for this object
+    "training": "Training Java",
+    "tahun": "2012",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Anabatic Technologies",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Sumber Sarana", // new property for this object
+    "training": "Training Training Hibernate dan Spring",
+    "tahun": "2011",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Sumber Sarana",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Jasa Asuransi Indonesia", // new property for this object
+    "training": "Training Java Web",
+    "tahun": "2011",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Jasa Asuransi Indonesia",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Sigma Cipta Caraka", // new property for this object
+    "training": "Training Java",
+    "tahun": "2011",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Sigma Cipta Caraka",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Graha Informatika Nusantara", // new property for this object
+    "training": "Training MySQL",
+    "tahun": "2011",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Graha Informatika Nusantara",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Pura Barutama", // new property for this object
+    "training": "Training Java Web",
+    "tahun": "2010",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Pura Barutama",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Visi Solusi Teknologi", // new property for this object
+    "training": "Training Java",
+    "tahun": "2010",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Visi Solusi Teknologi",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "ITC Finance", // new property for this object
+    "training": "Training Java",
+    "tahun": "2010",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "ITC Finance",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "AJN Solusindo", // new property for this object
+    "training": "Training JPos",
+    "tahun": "2010",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "AJN Solusindo",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Nusantara Compnet Integrator", // new property for this object
+    "training": "Training Java",
+    "tahun": "2010",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Nusantara Compnet Integrator",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "ITC Finance", // new property for this object
+    "training": "Training Java",
+    "tahun": "2009",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "ITC Finance",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Sarana Multi Solusi", // new property for this object
+    "training": "Training Ibatis",
+    "tahun": "2009",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Sarana Multi Solusi",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Derektorat Jendral Bea dan Cukai", // new property for this object
+    "training": "Training Java Fundamental & Java Web Basic",
+    "tahun": "2009",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Derektorat Jendral Bea dan Cukai",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Bappenas", // new property for this object
+    "training": "Training Java",
+    "tahun": "2009",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Bappenas",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Inter Aneka Lestari Kimia", // new property for this object
+    "training": "Training Java",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Inter Aneka Lestari Kimia",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Agranet Multi Citra Siberkom", // new property for this object
+    "training": "Training Java Application Designing dan Programming",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Agranet Multi Citra Siberkom",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Wahana Arthan Harsaka", // new property for this object
+    "training": "Training Java",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Wahana Arthan Harsaka",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Perdanan Informatika", // new property for this object
+    "training": "Training Java",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Perdanan Informatika",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Pertamina Bina Medika", // new property for this object
+    "training": "Training Java",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Pertamina Bina Medika",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Bajau Escorindo", // new property for this object
+    "training": "Training MySQL",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Bajau Escorindo",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Lembaga Sandi Negara", // new property for this object
+    "training": "Training Java",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Lembaga Sandi Negara",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Wijaya Karya", // new property for this object
+    "training": "Training Java",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Wijaya Karya",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Andia", // new property for this object
+    "training": "Training Java",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Andia",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Bappenas", // new property for this object
+    "training": "Training Java",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Bappenas",
+	"image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Primenet", // new property for this object
+    "training": "Training Java",
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Primenet",
+	"image": "{{ root_url }}/images/icon_example.png"},
+]; 
+</script>
+
+<style>
+    .content-hidden{
+        display: none;
+    }
+</style>
+
+<ul class="portfolio-filter nav nav-pills">
+    <li class="active"><a href="#" data-filter="*">All</a></li>
+    <li><a href="#" data-filter=".2014">2014</a></li>
+    <li><a href="#" data-filter=".2013">2013</a></li>
+    <li><a href="#" data-filter=".2012">2012</a></li>
+    <li><a href="#" data-filter=".2011">2011</a></li>
+    <li><a href="#" data-filter=".2010">2010</a></li>
+    <li><a href="#" data-filter=".2009">2009</a></li>
+    <li><a href="#" data-filter=".2008">2008</a></li>
+</ul>
+<!-- /.portfolio-filter -->
+<div class="row">
+    <div id="isotope-portfolio-container">
+        
+<script>
+ for (i=0; i<array.length; i++)
+    {   
+    	document.write("<div class='col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper "+array[i].tahun+"'>");
+       		document.write("<div class='portfolio-item'>");
+        		document.write("<div class='portfolio-thumb'>");
+        			document.write("<img src='"+array[i].image+"' class='img-responsive'>"); 
+       				document.write("<div class='image-overlay'></div>"); 
+       				document.write("<a class='portfolio-zoom'><i class='fa fa-eye'></i></a>"); 
+        			document.write("<a href='#' onclick='changeTextModal("+i+")' class='portfolio-zoom' data-toggle='modal' data-target='#myModal'><i class='fa fa-eye'></i></a>"); 
+        		document.write("</div>"); 
+        		document.write("<div class='portfolio-details'>"); 
+        			document.write("<h5>"+array[i].nama+"</h5>"); 
+        document.write("<p>("+array[i].training+")<br />Tahun : "+array[i].tahun+"</p>"); 
+
+        	document.write("<div class='content-hidden'>");
+        		document.write("<div id='list-project-description"+i+"'>"+array[i].description+"</div>");
+        		document.write("<div id='list-project-project"+i+"'>"+array[i].training+"</div>");
+        		document.write("<div id='list-project-date"+i+"'>"+array[i].date+"</div>");
+        		document.write("<div id='list-project-company"+i+"'>"+array[i].company+"</div>");
+        		document.write("<div id='list-project-website"+i+"'>"+array[i].website+"</div>");
+        	document.write("</div>");
+
+        document.write("</div></div></div>"); 
+
+    }
+</script>
+
+    </div>
+    <!-- /.isotope-portfolio-container -->
+</div>
+<!-- /.row -->
+
+
+{% include modal/modal_project.html %}

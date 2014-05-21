@@ -8,6 +8,113 @@ sharing: true
 footer: true
 ---
 
+<script>
+// namaApp | Tahun | Description | project | date | company | website
+var LoreIpsum = "Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.";
+
+var array = [
+{
+    "nama": "Midtrans (Veritrans Indonesia)", // new property for this object
+    "tahun": "2013",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Midtrans (Veritrans Indonesia)",
+    "image": "{{ root_url }}/images/icon_example.png"},
+
+{
+    "nama": "Cahaya Buana Intitama", // new property for this object
+    "tahun": "2013",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Cahaya Buana Intitama",
+    "image": "{{ root_url }}/images/icon_example.png"},
+
+{
+    "nama": "TRASPAC", // new property for this object
+    "tahun": "2013",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "TRASPAC",
+    "image": "{{ root_url }}/images/icon_example.png"},
+
+{
+    "nama": "SUMISHO GLOBAL LOGISTICS INDONESIA", // new property for this object
+    "tahun": "2012",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "SUMISHO GLOBAL LOGISTICS INDONESIA",
+    "image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Lembaga Sandi Negara", // new property for this object
+    "tahun": "2012",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Lembaga Sandi Negara",
+    "image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Pertamina EP", // new property for this object
+    "tahun": "2012",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Pertamina EP",
+    "image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Bajau Escorindo", // new property for this object
+    "tahun": "2010",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Bajau Escorindo",
+    "image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Bajau Escorindo", // new property for this object
+    "tahun": "2009",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Bajau Escorindo",
+    "image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Inter Aneka Lestari Kimia", // new property for this object
+    "tahun": "2009",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Inter Aneka Lestari Kimia",
+    "image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Synergy Service Solution", // new property for this object
+    "tahun": "2009",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Synergy Service Solution",
+    "image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Asian Brain", // new property for this object
+    "tahun": "2009",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Asian Brain",
+    "image": "{{ root_url }}/images/icon_example.png"},
+{
+    "nama": "Inter Aneka Lestari Kimia", // new property for this object
+    "tahun": "2008",
+    "description": LoreIpsum,
+    "date": "-",
+    "website": "-",
+    "company": "Inter Aneka Lestari Kimia",
+    "image": "{{ root_url }}/images/icon_example.png"},
+]; 
+</script>
+
 <style>
     .content-hidden{
         display: none;
@@ -27,318 +134,35 @@ footer: true
 <!-- /.portfolio-filter -->
 <div class="row">
     <div id="isotope-portfolio-container">
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2013">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(1)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Midtrans (Veritrans Indonesia)</h5>
-                    <p>Tahun : 2013</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description1">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project1">-</div>
-                        <div id="list-project-date1">-</div>
-                        <div id="list-project-company1">Midtrans (Veritrans Indonesia)</div>
-                        <div id="list-project-website1">-</div>
-                    </div>
-                    <!-- ############################ -->
+        
+<script>
+ for (i=0; i<array.length; i++)
+    {   
+        document.write("<div class='col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper "+array[i].tahun+"'>");
+            document.write("<div class='portfolio-item'>");
+                document.write("<div class='portfolio-thumb'>");
+                    document.write("<img src='"+array[i].image+"' class='img-responsive'>"); 
+                    document.write("<div class='image-overlay'></div>"); 
+                    document.write("<a class='portfolio-zoom'><i class='fa fa-eye'></i></a>"); 
+                    document.write("<a href='#' onclick='changeTextModal("+i+")' class='portfolio-zoom' data-toggle='modal' data-target='#myModal'><i class='fa fa-eye'></i></a>"); 
+                document.write("</div>"); 
+                document.write("<div class='portfolio-details'>"); 
+                    document.write("<h5>"+array[i].nama+"</h5>"); 
+        document.write("<p>Tahun : "+array[i].tahun+"</p>"); 
 
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2013">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                	<div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(2)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Cahaya Buana Intitama</h5>
-                    <p>Tahun : 2013</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description2">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project2">-</div>
-                        <div id="list-project-date2">-</div>
-                        <div id="list-project-company2">Cahaya Buana Intitama</div>
-                        <div id="list-project-website2">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2013">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(3)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>TRASPAC</h5>
-                    <p>Tahun : 2013</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description3">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project3">-</div>
-                        <div id="list-project-date3">-</div>
-                        <div id="list-project-company3">TRASPAC</div>
-                        <div id="list-project-website3">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2012">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(4)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>SUMISHO GLOBAL LOGISTICS INDONESIA</h5>
-                    <p>Tahun : 2012</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description4">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project4">-</div>
-                        <div id="list-project-date4">-</div>
-                        <div id="list-project-company4">SUMISHO GLOBAL LOGISTICS INDONESIA</div>
-                        <div id="list-project-website4">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2012">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(5)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Lembaga Sandi Negara</h5>
-                    <p>Tahun : 2012</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description5">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project5">-</div>
-                        <div id="list-project-date5">-</div>
-                        <div id="list-project-company5">Lembaga Sandi Negara</div>
-                        <div id="list-project-website5">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2012">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(6)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Pertamina EP</h5>
-                    <p>Tahun : 2012</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description6">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project6">-</div>
-                        <div id="list-project-date6">-</div>
-                        <div id="list-project-company6">Pertamina EP</div>
-                        <div id="list-project-website6">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2010">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(7)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Bajau Escorindo</h5>
-                    <p>Tahun : 2010</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description7">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project7">-</div>
-                        <div id="list-project-date7">-</div>
-                        <div id="list-project-company7">Bajau Escorindo</div>
-                        <div id="list-project-website7">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2009">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(8)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Bajau Escorindo</h5>
-                    <p>Tahun : 2009</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description8">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project8">-</div>
-                        <div id="list-project-date8">-</div>
-                        <div id="list-project-company8">Bajau Escorindo</div>
-                        <div id="list-project-website8">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2009">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(9)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Inter Aneka Lestari Kimia</h5>
-                    <p>Tahun : 2009</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description9">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project9">-</div>
-                        <div id="list-project-date9">-</div>
-                        <div id="list-project-company9">Inter Aneka Lestari Kimia</div>
-                        <div id="list-project-website9">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2009">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(10)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Synergy Service Solution</h5>
-                    <p>Tahun : 2009</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description10">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project10">-</div>
-                        <div id="list-project-date10">-</div>
-                        <div id="list-project-company10">Synergy Service Solution</div>
-                        <div id="list-project-website10">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2009">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(11)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Asian Brain</h5>
-                    <p>Tahun : 2009</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description11">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project11">-</div>
-                        <div id="list-project-date11">-</div>
-                        <div id="list-project-company11">Asian Brain</div>
-                        <div id="list-project-website11">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
-        <div class="col-xs-12 col-sm-6 col-md-3 portfolio-item-wrapper 2008">
-            <div class="portfolio-item">
-                <div class="portfolio-thumb">
-                	<img src="{{ root_url }}/images/icon_example.png" class="img-responsive" alt="1st Portfolio Thumb">
-                    <div class="image-overlay"></div>
-                    <a class="portfolio-zoom"><i class="fa fa-eye"></i></a>
-                    <a href="" onclick="changeTextModal(12)" class="portfolio-zoom" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="portfolio-details">
-                    <h5>Inter Aneka Lestari Kimia</h5>
-                    <p>Tahun : 2008</p>
-                    <!-- ########## Hiden ########### -->
-                    <div class="content-hidden">
-                        <div id="list-project-description12">
-                            Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.
-                        </div>
-                        <div id="list-project-project12">-</div>
-                        <div id="list-project-date12">-</div>
-                        <div id="list-project-company12">Inter Aneka Lestari Kimia</div>
-                        <div id="list-project-website12">-</div>
-                    </div>
-                    <!-- ############################ -->
-                </div>
-        	</div>
-        </div>
-        <!-- /.portfolio-item-wrapper -->
+            document.write("<div class='content-hidden'>");
+                document.write("<div id='list-project-description"+i+"'>"+array[i].description+"</div>");
+                document.write("<div id='list-project-project"+i+"'>"+array[i].nama+"</div>");
+                document.write("<div id='list-project-date"+i+"'>"+array[i].date+"</div>");
+                document.write("<div id='list-project-company"+i+"'>"+array[i].company+"</div>");
+                document.write("<div id='list-project-website"+i+"'>"+array[i].website+"</div>");
+            document.write("</div>");
+
+        document.write("</div></div></div>"); 
+
+    }
+</script>
+
     </div>
     <!-- /.isotope-portfolio-container -->
 </div>
@@ -346,4 +170,3 @@ footer: true
 
 
 {% include modal/modal_project.html %}
-
