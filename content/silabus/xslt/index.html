@@ -29,6 +29,7 @@
         <script src="assets/js/html5shiv.js"></script>
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->
+        <link href="/assets/css/artivisi.css" rel="stylesheet">
     </head>
     <!--end head-->
 
@@ -176,14 +177,51 @@
                                     <h5>Artikel Terbaru</h5>
                                 </div>
                                 <ul class="widget-list">
+                                <script>
                                 
-                                  <li class="post">
-                                    <a href="/octopress/membuat-categories-aside/">Membuat Categories Aside</a>
-                                  </li>
+                                    document.write("<li class='post'>");
+                                    document.write("<a href='/ilmu_budaya_dasar/hubungan-budaya-sastra/'>");
+                                    
+                                    var a = "Hubungan Budaya Dan Sastra"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    
+                                    
+                                    document.write("</a></li>");
                                 
-                                  <li class="post">
-                                    <a href="/octopress/membuat-read-more/">Membuat Read More</a>
-                                  </li>
+                                    document.write("<li class='post'>");
+                                    document.write("<a href='/ilmu_budaya_dasar/manusia-sebagai-makhluk-sosial-budaya/'>");
+                                    
+                                    var a = "Manusia Sebagai Makhluk Sosial Dan Budaya"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    
+                                    
+                                    document.write("</a></li>");
+                                
+                                    document.write("<li class='post'>");
+                                    document.write("<a href='/octopress/membuat-categories-aside/'>");
+                                    
+                                    var a = "Membuat Categories Aside"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    
+                                    
+                                    document.write("</a></li>");
+                                
+                                    document.write("<li class='post'>");
+                                    document.write("<a href='/octopress/membuat-read-more/'>");
+                                    
+                                    var a = "Membuat Read More"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    
+                                    
+                                    document.write("</a></li>");
+                                
+                                </script>
+                                
+                                  
                                 
                                 </ul>
                             </div>

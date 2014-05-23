@@ -29,6 +29,7 @@
         <script src="assets/js/html5shiv.js"></script>
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->
+        <link href="/assets/css/artivisi.css" rel="stylesheet">
     </head>
     <!--end head-->
 
@@ -155,7 +156,7 @@
 
 <blockquote><p>Baiklah saya sudah mengerti, bagaimana cara saya mendaftar magang?</p></blockquote>
 
-<p>Silahkan kirim email ke <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#105;&#110;&#x66;&#x6f;&#64;&#x61;&#114;&#x74;&#105;&#118;&#105;&#115;&#105;&#46;&#99;&#x6f;&#109;">&#105;&#110;&#102;&#111;&#x40;&#97;&#x72;&#x74;&#x69;&#x76;&#x69;&#115;&#x69;&#46;&#99;&#x6f;&#x6d;</a>. Jelaskan maksud Anda ingin magang dan sertakan juga Curriculum Vitae dan surat lamaran. Nanti akan kami panggil untuk proses koordinasi selanjutnya.</p>
+<p>Silahkan kirim email ke <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#105;&#110;&#x66;&#x6f;&#64;&#97;&#x72;&#116;&#x69;&#118;&#x69;&#x73;&#x69;&#x2e;&#99;&#x6f;&#x6d;">&#x69;&#110;&#102;&#111;&#64;&#97;&#x72;&#116;&#105;&#x76;&#x69;&#x73;&#105;&#x2e;&#99;&#111;&#x6d;</a>. Jelaskan maksud Anda ingin magang dan sertakan juga Curriculum Vitae dan surat lamaran. Nanti akan kami panggil untuk proses koordinasi selanjutnya.</p>
 
 			</div>
 		</div>
@@ -205,14 +206,51 @@
                                     <h5>Artikel Terbaru</h5>
                                 </div>
                                 <ul class="widget-list">
+                                <script>
                                 
-                                  <li class="post">
-                                    <a href="/octopress/membuat-categories-aside/">Membuat Categories Aside</a>
-                                  </li>
+                                    document.write("<li class='post'>");
+                                    document.write("<a href='/ilmu_budaya_dasar/hubungan-budaya-sastra/'>");
+                                    
+                                    var a = "Hubungan Budaya Dan Sastra"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    
+                                    
+                                    document.write("</a></li>");
                                 
-                                  <li class="post">
-                                    <a href="/octopress/membuat-read-more/">Membuat Read More</a>
-                                  </li>
+                                    document.write("<li class='post'>");
+                                    document.write("<a href='/ilmu_budaya_dasar/manusia-sebagai-makhluk-sosial-budaya/'>");
+                                    
+                                    var a = "Manusia Sebagai Makhluk Sosial Dan Budaya"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    
+                                    
+                                    document.write("</a></li>");
+                                
+                                    document.write("<li class='post'>");
+                                    document.write("<a href='/octopress/membuat-categories-aside/'>");
+                                    
+                                    var a = "Membuat Categories Aside"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    
+                                    
+                                    document.write("</a></li>");
+                                
+                                    document.write("<li class='post'>");
+                                    document.write("<a href='/octopress/membuat-read-more/'>");
+                                    
+                                    var a = "Membuat Read More"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    
+                                    
+                                    document.write("</a></li>");
+                                
+                                </script>
+                                
+                                  
                                 
                                 </ul>
                             </div>

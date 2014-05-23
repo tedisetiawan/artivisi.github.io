@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[ArtiVisi Intermedia]]></title>
-  <link href="http://artivisi.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: ilmu_budaya_dasar | ArtiVisi Intermedia]]></title>
+  <link href="http://artivisi.github.io/categories/ilmu-budaya-dasar/atom.xml" rel="self"/>
   <link href="http://artivisi.github.io/"/>
   <updated>2014-05-23T13:30:48+07:00</updated>
   <id>http://artivisi.github.io/</id>
@@ -46,7 +46,7 @@ Latar belakang ilmu budaya dalam konteks budaya, negara dan masyarakat Indonesia
 
 <p>
 <b>Prosa</b> adalah karangan bebas yang tidak terikat oleh banyaknya baris, banyaknya suku kata, dalam setiap baris serta tak terikat oleh irama dan rimanya seperti dalam puisi.
-Prosa berbeda dengan puisi karena variasi ritme (rhythm) yang dimilikinya lebih besar, serta bahasanya yang lebih sesuai dengan arti leksikalnya. Kata prosa berasal dari bahasa Latin &#8220;prosa&#8221; yang artinya &#8220;terus terang&#8221;. Jenis tulisan prosa biasanya digunakan untuk mendeskripsikan suatu fakta atau ide. Karenanya, prosa dapat digunakan untuk surat kabar, majalah, novel, ensiklopedia, surat, serta berbagai jenis media lainnya. Prosa kadangkala juga disebut dengan istilah &#8220;gancaran&#8221;.
+Prosa berbeda dengan puisi karena variasi ritme (rhythm) yang dimilikinya lebih besar, serta bahasanya yang lebih sesuai dengan arti leksikalnya. Kata prosa berasal dari bahasa Latin "prosa" yang artinya "terus terang". Jenis tulisan prosa biasanya digunakan untuk mendeskripsikan suatu fakta atau ide. Karenanya, prosa dapat digunakan untuk surat kabar, majalah, novel, ensiklopedia, surat, serta berbagai jenis media lainnya. Prosa kadangkala juga disebut dengan istilah "gancaran".
 </p>
 
 
@@ -203,67 +203,6 @@ Manusia merupakan makhluk sosial dan budaya, maka dari itu kita membutuhkan oran
 Jadi kita harus saling menghargai dan menghormati sesama manusia dengan mengikuti norma yang ada di masyarakat.</p></blockquote>
 
 <p>Sumber : <a>2010. Yudhistira</a> , <a href="http://google.com/">http://google.com/</a> , <a href="http://humanunited.blogspot.com/">http://humanunited.blogspot.com/</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Membuat Categories Aside]]></title>
-    <link href="http://artivisi.github.io/octopress/membuat-categories-aside/"/>
-    <updated>2013-07-03T12:38:00+07:00</updated>
-    <id>http://artivisi.github.io/octopress/membuat-categories-aside</id>
-    <content type="html"><![CDATA[<p>Ada satu fitur yang cukup esensial di blog engine tapi tidak ada di Octopress yaitu tampilan daftar kategori. Alhamdulillah, ternyata sudah ada yang membuat plugin tersebut. Namun, di sini ada beberapa perbaikan dari plugin tersebut.</p>
-
-<!-- more -->
-
-
-<p>Berikut ini langkah-langkahnya :<br />
-<strong>1. Download <code>category_list.rb</code> berikut ini</strong><br />
-File /home/ivans/Kerjaan/webArtivisi/octo-artivisi/source/downloads/code/categories/category_list.rb could not be found</p>
-
-<p><strong>2. Buat file <code>source/_includes/custom/asides/categories.html</code> dengan isi sebagai berikut :</strong></p>
-
-<p>File /home/ivans/Kerjaan/webArtivisi/octo-artivisi/source/downloads/code/categories/categories.html could not be found</p>
-
-<p><strong>3. Tambahkan nilai <code>custom/asides/categories.html</code> pada properti <code>default_asides</code> di file <code>_config.yml</code> sehingga menjadi seperti ini : </strong></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>default_asides: [asides/recent_posts.html, custom/asides/categories.html, 
-</span><span class='line'>asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>4. Selesai. Daftar kategori akan tampil di sidebar blog.</strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Membuat Read More]]></title>
-    <link href="http://artivisi.github.io/octopress/membuat-read-more/"/>
-    <updated>2013-07-03T08:25:00+07:00</updated>
-    <id>http://artivisi.github.io/octopress/membuat-read-more</id>
-    <content type="html"><![CDATA[<p>Saya akan memberikan tips sederhana
-bagaimana membuat Read more pada postingan
-di Octopress.</p>
-
-<!-- more -->
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!-- more --&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Bagi anda yang membuat postingan pada
-Octopress, dan merasa postingan anda
-terlalu panjang untuk ditampilkan secara
-keseluruhan, anda bisa membuat read more pada postingan anda di Octopress. Anda
-Cukup memberi syntax sederhana seperti ini</p>
-
-<br />
-
-
-<p>Selamat Mencoba</p>
 ]]></content>
   </entry>
   
