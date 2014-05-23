@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[ArtiVisi Intermedia]]></title>
-  <link href="http://artivisi.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: octopress | ArtiVisi Intermedia]]></title>
+  <link href="http://artivisi.github.io/categories/octopress/atom.xml" rel="self"/>
   <link href="http://artivisi.github.io/"/>
   <updated>2014-05-23T09:23:06+07:00</updated>
   <id>http://artivisi.github.io/</id>
@@ -33,11 +33,10 @@ File /home/ivans/Kerjaan/webArtivisi/octo-artivisi/source/downloads/code/categor
 
 <p><strong>3. Tambahkan nilai <code>custom/asides/categories.html</code> pada properti <code>default_asides</code> di file <code>_config.yml</code> sehingga menjadi seperti ini : </strong></p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>default_asides: [asides/recent_posts.html, custom/asides/categories.html, 
-</span><span class='line'>asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</span></code></pre></td></tr></table></div></figure>
-
+<p><code>
+default_asides: [asides/recent_posts.html, custom/asides/categories.html,
+asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+</code></p>
 
 <p><strong>4. Selesai. Daftar kategori akan tampil di sidebar blog.</strong></p>
 ]]></content>
@@ -55,11 +54,12 @@ di Octopress.</p>
 <!-- more -->
 
 
+<p>```</p>
+
+<!-- more -->
 
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!-- more --&gt;</span></code></pre></td></tr></table></div></figure>
-
+<p>```</p>
 
 <p>Bagi anda yang membuat postingan pada
 Octopress, dan merasa postingan anda

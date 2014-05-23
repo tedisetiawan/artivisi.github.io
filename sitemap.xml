@@ -1,6 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://artivisi.github.io/octopress/membuat-read-more/</loc>
+        <lastmod>2014-05-23T09:06:13+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://artivisi.github.io/octopress/membuat-categories-aside/</loc>
+        <lastmod>2014-05-23T09:06:13+07:00</lastmod>
+    </url>
+    <url>
         <loc>http://artivisi.github.io/blog/</loc>
         <lastmod>2014-05-19T13:17:44+07:00</lastmod>
     </url>
@@ -150,6 +158,6 @@
     </url>
     <url>
         <loc>http://artivisi.github.io/about/</loc>
-        <lastmod>2014-05-23T08:00:13+07:00</lastmod>
+        <lastmod>2014-05-23T08:20:33+07:00</lastmod>
     </url>
 </urlset>

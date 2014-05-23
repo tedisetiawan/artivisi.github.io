@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-	<meta name="description" content="About Us Home Pages About Us Artivisi adalah Perusahaan IT yang mengkhususkan diri dalam pengembangan perangkat lunak, teknologi VOIP, dan area &hellip;">
+	<meta name="description" content="Membuat Categories Aside Home Post Membuat Categories Aside Jul 3rd, 2013 Ada satu fitur yang cukup esensial di blog engine tapi tidak ada di &hellip;">
 	
     <meta name="author" content="ArtiVisi Intermedia">
     <link rel="shortcut icon" href="ico.png">
-    <title>About Us - ArtiVisi Intermedia</title>
+    <title>Membuat Categories Aside - ArtiVisi Intermedia</title>
     <!-- Bootstrap Core CSS -->
         <link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
         <!-- Plugins CSS -->
@@ -55,7 +55,7 @@
 					<li class="dropdown ">
 						<a href="/">Home</a>
 					</li>
-					<li class="dropdown active">
+					<li class="dropdown ">
 						<a href="/about">About</a>
 					</li>
 				
@@ -71,74 +71,87 @@
 </header>
 
 	
-	<section id="page-title-wrapper" class="page-title-wrapper">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
-				
-				<h4>About Us</h4>
-				
-			</div>
-			<!-- /.col-sm-6 -->
-			<div class="col-xs-6 hidden-xs">
-				<ol class="breadcrumb pull-right">
-					<li><a href="#">Home</a></li>
-                    <li><a href="#">Pages</a></li>
-                    
-					<li class="active">About Us</li>
-					
-                 </ol>
-             </div>
-          </div>
+	
+<section id="page-title-wrapper" class="page-title-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        
+          <h4>Membuat Categories Aside</h4>
+        
+      </div>
+      <!-- /.col-sm-6 -->
+      <div class="col-xs-6 hidden-xs">
+        <ol class="breadcrumb pull-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Post</a></li>
+          
+            <li class="active"><a href="">Membuat Categories Aside</a></li>
+          
+        </ol>
+      </div>
     </div>
+  </div>
 </section>
+
 <!-- /.page-title-wrapper -->
 <section id="page" class="pad-25">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 pad-25">
-					<p>Artivisi adalah Perusahaan IT yang mengkhususkan diri dalam pengembangan perangkat lunak, teknologi VOIP, dan area manajemen jaringan. <br />Artivisi memberikan pelatihan, jasa, dan implementasi produk in-house bagi daerah-daerah.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 pad-25">
+        
+          <p class="meta">
+            
 
-<p>Aset terbesar kami adalah orang-orang dan pengetahuan, kami selalu melakukan penelitian untuk menemukan solusi yang lebih baik dengan memanfaatkan teknologi baru.<br /> Kami juga menyumbangkan keahlian kami kembali ke masyarakat dengan berbagi pengetahuan dan mensponsori proyek open source.</p>
 
-<blockquote><b>Misi kami : &#8220;Memberikan Nilai Dengan Open Platform&#8221;</b></blockquote>
 
-<div class="widget sample-pages">
-    <div class="subpage-title">
-        <h5>Pelatihan:</h5>
-    </div>
-    <ul class="widget-list">
-        <li>Membangun Aplikasi Java Desktop</li>
-        <li>Membangun Aplikasi Java Web</li>
-        <li>Membangun Aplikasi Java Mobile untuk Aplikasi Bisnis</li>
-        <li>Membangun Aplikasi Java Mobile untuk Game Developer</li>
-        <li>Manajemen Proyek untuk Pengembangan Perangkat Lunak</li>
-    </ul>
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-03T12:38:00+07:00" data-updated="true" itemprop="datePublished">Jul 3<span>rd</span>, 2013</time>
+            
+          </p>
+        
+          
+            
+            
+            <div class="entry-content"><p>Ada satu fitur yang cukup esensial di blog engine tapi tidak ada di Octopress yaitu tampilan daftar kategori. Alhamdulillah, ternyata sudah ada yang membuat plugin tersebut. Namun, di sini ada beberapa perbaikan dari plugin tersebut.</p>
+
+<!-- more -->
+
+
+<p>Berikut ini langkah-langkahnya :<br />
+<strong>1. Download <code>category_list.rb</code> berikut ini</strong><br />
+File /home/ivans/Kerjaan/webArtivisi/octo-artivisi/source/downloads/code/categories/category_list.rb could not be found</p>
+
+<p><strong>2. Buat file <code>source/_includes/custom/asides/categories.html</code> dengan isi sebagai berikut :</strong></p>
+
+<p>File /home/ivans/Kerjaan/webArtivisi/octo-artivisi/source/downloads/code/categories/categories.html could not be found</p>
+
+<p><strong>3. Tambahkan nilai <code>custom/asides/categories.html</code> pada properti <code>default_asides</code> di file <code>_config.yml</code> sehingga menjadi seperti ini : </strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>default_asides: [asides/recent_posts.html, custom/asides/categories.html, 
+</span><span class='line'>asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>4. Selesai. Daftar kategori akan tampil di sidebar blog.</strong></p>
 </div>
 
-<div class="widget sample-pages">
-    <div class="subpage-title">
-        <h5>Pelayanan:</h5>
+            
+          
+      </div>
     </div>
-    <ul class="widget-list">
-    	<li>Pengembangan Software dengan Java dan teknologi full stack open source framework</li>
-    	<li>Team building untuk pengembangan perangkat lunak, keterampilan manajemen proyek, mengintegrasikan jaminan kualitas, dan merampingkan proses pembangunan.</li>
-    </ul>
-</div>
-
-
-<table width="100%" style="border:5px solid silver;margin-top:20px">
-	<tr>
-		<td>
-			<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=201030469318056750454.0004e978ddc1faccfaeb8&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=-6.249374,106.90729&amp;spn=0,0&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=201030469318056750454.0004e978ddc1faccfaeb8&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=-6.249374,106.90729&amp;spn=0,0&amp;source=embed" style="color:#0000FF;text-align:left">My Saved Places</a> in a larger map</small>
-		</td>
-	</tr>
-</table>
-
-			</div>
-		</div>
-	</div>
+  </div>
 </section>
+
+
 
 
 	
