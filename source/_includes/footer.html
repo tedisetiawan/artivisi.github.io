@@ -39,11 +39,26 @@
                                     <h5>Artikel Terbaru</h5>
                                 </div>
                                 <ul class="widget-list">
+                                <script>
                                 {% for post in site.posts limit: site.recent_posts %}
-                                  <li class="post">
-                                    <a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
-                                  </li>
+                                    document.write("<li class='post'>");
+                                    document.write("<a href='{{ root_url }}{{ post.url }}'>");
+                                    {% if site.titlecase %}
+                                    var a = "{{ post.title | titlecase }}"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    {% else %}
+                                    var a = "{{ post.title }}"
+                                    if(a.length > 26)a = a.substring(0,24) + " ...";
+                                    document.write(a);
+                                    {% endif %}
+                                    
+                                    document.write("</a></li>");
                                 {% endfor %}
+                                </script>
+                                
+                                  
+                                
                                 </ul>
                             </div>
                         </div>
