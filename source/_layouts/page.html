@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% assign index = true %}
 <section id="page-title-wrapper" class="page-title-wrapper">
 	<div class="container">
 		<div class="row">
@@ -34,3 +35,6 @@ layout: default
 	</div>
 </section>
 
+{% if page.include_opensource == true %}
+	{% include open_source.html %}
+{% endif %}

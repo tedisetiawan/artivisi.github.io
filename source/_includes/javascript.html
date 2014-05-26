@@ -83,18 +83,73 @@
                 });
                 // jQuery UItoTop
                 tpj().UItoTop({ easingType: 'easeOutQuart' });
-                // Skin Chooser
-                tpj(".skin-chooser-toggle").click(function () {
-                    tpj(".skin-chooser-wrap").toggleClass("show");
-                });
-                tpj(".color-skin").click(function () {
-                    var cls = this.id;
-                    tpj(".color-skin").removeClass("active");
-                    tpj(this).addClass("active");
-                    tpj("#utter-wrapper").removeClass();
-                    tpj("#utter-wrapper").addClass(cls);
-                });
             });
+            // jQuery CarouFredSel
+            var caroufredsel = function () {
+                tpj('#caroufredsel-portfolio-container').carouFredSel({
+                    responsive: true,
+                    scroll: 1,
+                    circular: false,
+                    infinite: false,
+                    items: {
+                        visible: {
+                            min: 1,
+                            max: 3
+                        }
+                    },
+                    prev: '#portfolio-prev',
+                    next: '#portfolio-next',
+                    auto: {
+                        play: false
+                    }
+                });
+                tpj('#caroufredsel-blog-posts-container').carouFredSel({
+                    responsive: true,
+                    scroll: 1,
+                    circular: false,
+                    infinite: false,
+                    items: {
+                        visible: {
+                            min: 1,
+                            max: 3
+                        }
+                    },
+                    prev: '#blog-posts-prev',
+                    next: '#blog-posts-next',
+                    auto: {
+                        play: false
+                    }
+                });
+                tpj('#caroufredsel-clients-container').carouFredSel({
+                    responsive: true,
+                    scroll: 1,
+                    circular: false,
+                    infinite: false,
+                    items: {
+                        visible: {
+                            min: 1,
+                            max: 4
+                        }
+                    },
+                    prev: '#client-prev',
+                    next: '#client-next',
+                    auto: {
+                        play: false
+                    }
+                });
+            };
+            tpj(window).load(function () {
+                caroufredsel();
+            });
+            tpj(window).resize(function () {
+                caroufredsel();
+            });            
+        </script>
+        {% elsif page.include_opensource == true %}
+        <script type="text/javascript">
+            var tpj = jQuery;
+            tpj.noConflict();
+            
             // jQuery CarouFredSel
             var caroufredsel = function () {
                 tpj('#caroufredsel-portfolio-container').carouFredSel({
