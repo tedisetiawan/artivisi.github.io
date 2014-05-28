@@ -10,3 +10,7 @@
 .recent-post-body{
 	height: 240px;
 }
+
+.border-footer>li{
+	border-bottom:1px solid #D3D3D3 !important;
+}

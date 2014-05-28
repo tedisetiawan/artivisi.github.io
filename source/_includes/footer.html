@@ -38,10 +38,10 @@
                     <div class="subpage-title">
                         <h5>Artikel Terbaru</h5>
                     </div>
-                    <ul class="recent-posts">
+                    <ul class="recent-posts border-footer">
                         <script>
                         {% for post in site.posts limit: site.recent_posts %}
-                        document.write("<li style='border-bottom:1px solid #D3D3D3'><h5>");
+                        document.write("<li><h5>");
                         document.write("<a href='{{ root_url }}{{ post.url }}'>");
                         {% if site.titlecase %}
                         var a = "{{ post.title | titlecase }}";
@@ -63,7 +63,7 @@
                     <div class="subpage-title">
                         <h5>Download</h5>
                     </div>
-                    <ul class="widget-list">
+                    <ul class="widget-list border-footer">
                         <li><a href="http://endy.muhardin.googlepages.com/minibook-log4j.pdf">Minibook Log4J</a></li>
                         <li><a href="http://software.endy.muhardin.com/downloads/user-story.odt">Template User Story</a></li>
                         <li><a href="http://software.endy.muhardin.com/downloads/change-request.odt">Template Change Request Form</a></li>
@@ -77,7 +77,7 @@
                     <div class="subpage-title">
                         <h5>Open Source</h5>
                     </div>
-                    <ul class="widget-list">
+                    <ul class="widget-list border-footer">
                         <li><a href="https://github.com/artivisi/biller-simulator">Biller Simulator</a></li>
                         <li><a href="http://www.playsms.org/">playSMS</a></li>
                         <li><a href="https://github.com/artivisi/iso8583-processor">ISO-8583 Processor</a></li>
