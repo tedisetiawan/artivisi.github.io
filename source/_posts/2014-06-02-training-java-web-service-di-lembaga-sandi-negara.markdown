@@ -11,6 +11,8 @@ ArtiVisi menyampaikan pelatihan tentang implementasi web services dengan menggun
 
 <b>Materi yang disampaikan</b><br />
 
+<!--more-->
+
 Hari ke-1:<br />
 Web Service Overview
 <ul>
