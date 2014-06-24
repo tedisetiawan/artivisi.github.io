@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Training Java Web Service di Lembaga Sandi Negara"
+title: "Training Java Web Service"
 date: 2014-06-02 14:53
 comments: true
 categories: 
 ---
 
-Laporan ini kami susun berdasarkan atas apa yang telah dilaksanakan pada kegiatan pelatihan yang  berlangsung mulai tanggal 17 Maret 2014 sampai dengan 2 April 2014. Kegiatan ini dilakukan selama 12 hari dengan durasi masing-masing 6 jam perhari (total 72 jam) bertempat di Gedung Lembaga Sandi Negara Republik Indonesia dan dihadiri oleh 10 orang peserta.<br /><br />
-Kami berharap kegiatan ini dapat menambah pengetahuan kepada para peserta khususnya yang berhubungan dengan materi pelatihan yaitu “Pemrograman Web Service untuk Secure Transaction”.
+ArtiVisi menyampaikan pelatihan tentang implementasi web services dengan menggunakan Java.
 
-<b>BERITA ACARA HARIAN</b><br />
+
+<b>Materi yang disampaikan</b><br />
 
 Hari ke-1:<br />
 Web Service Overview
@@ -228,8 +228,7 @@ Membuat aplikasi storage berbasis cloud
 Hari ke-12:<br />
 Membuat aplikasi client
 
-<b>REKOMENDASI</b><br />
-Pada dasarnya para peserta pelatihan telah memiliki pengetahuan mengenai pemrograman java dan dengan adanya pelatihan ini para peserta menjadi lebih paham mengenai materi Web Service dan bagaimana cara mengimplementasikannya pada beberapa jenis platform seperti iOS, Android dan Windows 8. Namun tidak hanya berhenti sampai disini, para peserta harus tetap mengembangkan pengetahuannya dan terus berlatih agar dapat diperoleh hasil yang maksimal dalam membangun dan mengembangkan sebuah aplikasi khususnya mengenai Secure Transaction sesuai dengan tema pelatihan ini yaitu “Pemrograman Web Service untuk Secure Transaction”.<br /><br />
+<br />
 
 <b>FOTO DOKUMENTASI</b><br /><br />
 ![foto dokumentasi1](http://i1053.photobucket.com/albums/s466/dadangiswan/lemsaneg_3_zps1a9dbc30.jpg)<br /><br />
